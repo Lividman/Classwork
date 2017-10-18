@@ -1,14 +1,17 @@
 package shapes;
 
-public class Square implements Shape 
-{
-	private double lenght;
-	private double width;
-	public Shape rectangle(double lenght, double width)
-	{
-		public double area()
-		{
-			return (lenght * width);
-		}
+public class Square extends Rectangle {
+
+	int side;
+
+	public Square(int side) {
+		super(side, side);
+		this.side = side;
 	}
+
+	@Override
+	public String toString() {
+		return "This sqare's side length is "+ side + ".";
+	}
+
 }

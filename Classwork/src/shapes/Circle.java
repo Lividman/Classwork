@@ -1,19 +1,38 @@
 package shapes;
 
-public class Circle implements Shape
-{
-	double radius;
+/**
+ * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
+ *
+ */
+public class Circle implements Shape {
+
+	// fields
+	private int radius;
 	private static double pi = 3.14;
-	public Circle (double rad)
-	{
-		radius = rad;
+
+	/**
+	 * Constructor method
+	 * 
+	 * @param radius
+	 */
+	public Circle(int radius) {
+		this.radius = radius;
 	}
-	public double calperi(double rad)
-	{
-	return (2 *(rad * pi));	
+
+	@Override
+	public double calculateArea() {
+		// to be implemented by student
+		return((radius * radius)* pi);
 	}
-	public double area(double rad)
-	{
-		return((rad * rad)* pi);
+
+	@Override
+	public double calculatePerimeter() {
+		// to be implemented by student
+		return( 2 * radius * pi);
+	}
+
+	@Override
+	public String toString() {
+		return "This Circle has a radius of "+radius+ ".";
 	}
 }
