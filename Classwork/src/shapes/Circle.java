@@ -7,7 +7,7 @@ package shapes;
 public class Circle implements Shape {
 
 	// fields
-	private int radius;
+	private double radius;
 	private static double pi = 3.14;
 
 	/**
@@ -33,6 +33,6 @@ public class Circle implements Shape {
 
 	@Override
 	public String toString() {
-		return "This Circle has a radius of "+radius+ ".";
+		return "This Circle has a radius of "+radius+ " It has an Area of " + this.calculateArea() + " and a perimeter of " + this.calculatePerimeter() + ".";
 	}
 }

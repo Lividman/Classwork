@@ -10,8 +10,9 @@ public class Square extends Rectangle {
 	}
 
 	@Override
-	public String toString() {
-		return "This sqare's side length is "+ side + ".";
+	public String toString()
+	{		
+		return "This sqare's side length is "+ side + ". And it has an area of " + this.calculateArea() + " with a perimeter of " + this.calculatePerimeter() + "." ;
 	}
 
 }
